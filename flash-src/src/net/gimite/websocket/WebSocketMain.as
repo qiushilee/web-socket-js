@@ -44,7 +44,7 @@ public class WebSocketMain extends Sprite implements IWebSocketLogger{
   }
   
   private function loadDefaultPolicyFile(wsUrl:String):void {
-    var policyUrl:String = "xmlsocket://" + URLUtil.getServerName(wsUrl) + ":843";
+    var policyUrl:String = "xmlsocket://" + URLUtil.getServerName(wsUrl) + ":8843";
     log("policy file: " + policyUrl);
     Security.loadPolicyFile(policyUrl);
   }
